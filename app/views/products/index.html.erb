@@ -5,6 +5,7 @@
     <th>Nome</th>
     <th>Categoria</th>
     <th>Preço</th>
+    <th>Tempo de confecção (em horas)</th>
     <th>Descrição</th>
     <th></th>
     <th></th>
@@ -16,6 +17,7 @@
     <td><%= product.name %></td>
     <td><%= product.category %></td>
     <td><%= product.price %></td>
+    <td><%= product.confection_time_in_hours %></td>
     <td><%= product.description %></td>
     <td><%= link_to 'Exibir', product %></td>
     <td><%= link_to 'Editar', edit_product_path(product) %></td>

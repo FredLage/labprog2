@@ -12,19 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label "Nome" %><br />
+    <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label "Categoria" %><br />
+    <%= f.label :category %><br />
     <%= f.text_field :category %>
   </div>
   <div class="field">
-    <%= f.label "Preço" %><br />
+    <%= f.label :price %><br />
     <%= f.text_field :price %>
   </div>
   <div class="field">
-    <%= f.label "Descrição" %><br />
+    <%= f.label :confection_time_in_hours %><br />
+    <%= f.text_field :confection_time_in_hours %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
   <div class="actions">

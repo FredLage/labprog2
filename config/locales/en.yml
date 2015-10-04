@@ -2,10 +2,22 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  errors:
+    messages:
+      blank: "não pode estar vazio!"
   activerecord:
     models:
-      product: Produto
+      product:
+        one: Produto
+        other: Produtos
+    attributes:
+      product:
+        name: Nome
+        category: Categoria
+        price: Preço
+        confection_time_in_hours: Tempo de confecção (em horas)
+        description: Descrição
   helpers:
     submit:
       create: "Criar %{model}"
-      update: "Editar %{model}"
+      update: "Editar  %{model}"
