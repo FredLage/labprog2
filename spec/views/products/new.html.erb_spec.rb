@@ -6,6 +6,7 @@ RSpec.describe "products/new", :type => :view do
       :name => "MyString",
       :category => "MyString",
       :price => "9.99",
+      :confection_time_in_hours => "2.5",
       :description => "MyText"
     ))
   end
@@ -20,6 +21,8 @@ RSpec.describe "products/new", :type => :view do
       assert_select "input#product_category[name=?]", "product[category]"
 
       assert_select "input#product_price[name=?]", "product[price]"
+
+      assert_select "input#product_confection_time_in_hours[name=?]", "product[confection_time_in_hours]"
 
       assert_select "textarea#product_description[name=?]", "product[description]"
     end

@@ -6,6 +6,7 @@ RSpec.describe "products/show", :type => :view do
       :name => "Name",
       :category => "Category",
       :price => "9.99",
+      :confection_time_in_hours => "2.5",
       :description => "MyText"
     ))
   end
@@ -15,6 +16,7 @@ RSpec.describe "products/show", :type => :view do
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/Category/)
     expect(rendered).to match(/9.99/)
+    expect(rendered).to match(/2.5/)
     expect(rendered).to match(/MyText/)
   end
 end
