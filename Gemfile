@@ -8,6 +8,7 @@ gem 'rails', '3.2.18'
 gem 'sqlite3'
 gem 'devise'
 gem 'factory_girl_rails'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'rspec-rails'
