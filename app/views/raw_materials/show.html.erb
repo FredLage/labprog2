@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @raw_material.name %>
+</p>
+
+<p>
+  <b>Categoria:</b>
+  <%= @raw_material.category %>
+</p>
+
+<p>
+  <b>Preço:</b>
+  <%= @raw_material.price %>
+</p>
+
+<p>
+  <b>Descrição:</b>
+  <%= @raw_material.description %>
+</p>
+
+
+<%= link_to 'Editar', edit_raw_material_path(@raw_material) %>
+<%= link_to 'Voltar', raw_materials_path %>

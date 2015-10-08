@@ -10,6 +10,9 @@ pt-BR:
       product:
         one: Produto
         other: Produtos
+      raw_material:
+        one: Matéria-prima
+        other: Matérias-primas
     attributes:
       product:
         name: Nome

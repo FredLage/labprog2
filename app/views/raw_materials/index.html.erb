@@ -1,0 +1,26 @@
+<h1>Listagem de matérias-primas</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Nome</th>
+    <th>Categoria</th>
+    <th>Preço</th>
+    <th>Descrição</th>
+  </tr>
+
+<% @raw_materials.each do |raw_material| %>
+  <tr>
+    <td><%= raw_material.name %></td>
+    <td><%= raw_material.category %></td>
+    <td><%= raw_material.price %></td>
+    <td><%= raw_material.description %></td>
+    <td><%= link_to 'Exibir', raw_material %></td>
+    <td><%= link_to 'Editar', edit_raw_material_path(raw_material) %></td>
+    <td><%= link_to 'Excluir', raw_material, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova matéria-prima', new_raw_material_path %>
