@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(:version => 20151010034231) do
 
   create_table "orders", :force => true do |t|
     t.string   "client_name"
-    t.text     "products"
     t.decimal  "price"
     t.string   "status"
     t.integer  "type_of_payment"
