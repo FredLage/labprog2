@@ -141,6 +141,11 @@
                           <i class="fa fa-puzzle-piece"></i> Matérias-primas
                           <% end %>
                       </li>
+                      <li class="<%= active_for('clients') %>">
+                          <%= link_to clients_path do %>
+                          <i class="fa fa-users"></i> Clientes
+                          <% end %>
+                      </li>
                   </ul>
               </div>
               <!-- /.navbar-collapse -->

@@ -13,6 +13,9 @@ pt-BR:
       order:
         one: Pedido
         other: Pedidos
+      client:
+        one: Cliente
+        other: Clientes
     attributes:
       product:
         name: Nome
@@ -31,6 +34,11 @@ pt-BR:
         price: Preço
         status: Status
         type_of_payment: Tipo de pagamento
+      client:
+        name: Nome
+        address: Endereço
+        phone_number: Telefone
+        email: E-mail
   helpers:
     submit:
       create: "Criar %{model}"
