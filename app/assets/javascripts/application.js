@@ -26,3 +26,12 @@ $(function() {
     width: '250px'
   });
 });
+
+$(function() {
+  return $('.chosen-select-simple').chosen({
+    disable_search_threshold: 10,
+    placeholder_text_single: 'Selecione a opção desejada',
+    no_results_text: 'Nenhum resultado encontrado',
+    width: '250px'
+  });
+});
