@@ -30,7 +30,7 @@ pt-BR:
         price: Preço
         description: Descrição
       order:
-        client_name: Nome do cliente
+        client: Cliente
         price: Preço
         status: Status
         type_of_payment: Tipo de pagamento

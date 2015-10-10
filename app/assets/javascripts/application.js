@@ -20,6 +20,7 @@
 $(function() {
   return $('.chosen-select').chosen({
     allow_single_deselect: true,
+    placeholder_text_single: 'Selecione a opção desejada',
     placeholder_text: 'Selecione as opções desejadas',
     no_results_text: 'Nenhum resultado encontrado',
     width: '250px'
