@@ -22,7 +22,7 @@
   <div class="field">
     <%= f.label :raw_materials %><br />
     <%= f.collection_select :raw_material_ids, RawMaterial.all, "id", "name",
-    {include_blank: true}, multiple: true, class: 'chosen-select' %>
+     {include_blank: true}, multiple: true, class: 'chosen-select' %>
   </div>
   <div class="field">
     <%= f.label :price %><br />
