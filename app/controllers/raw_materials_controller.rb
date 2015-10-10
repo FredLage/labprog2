@@ -37,7 +37,7 @@ class RawMaterialsController < ApplicationController
   end
 
   private
-    def set_RawMaterial
+    def set_raw_material
       @raw_material = RawMaterial.find(params[:id])
     end
 end

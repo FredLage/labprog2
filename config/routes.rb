@@ -1,5 +1,6 @@
 Labprog2::Application.routes.draw do
   resources :products
+  resources :raw_materials
 
 
   # The priority is based upon order of creation:

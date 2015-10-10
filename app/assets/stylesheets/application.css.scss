@@ -9,13 +9,17 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require sb-admin
+ *= require morris
  *= require_tree .
  */
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import url(https://fonts.googleapis.com/css?family=Roboto);
 
- body {
-   font-family: 'Roboto' !important;
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+  #page-wrapper {
+   min-height: 500px;
  }

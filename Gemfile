@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'factory_girl_rails'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 4.4.0'
 
 group :development, :test do
   gem 'rspec-rails'

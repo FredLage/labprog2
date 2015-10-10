@@ -1,6 +1,3 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 pt-BR:
   errors:
     messages:
@@ -19,6 +16,11 @@ pt-BR:
         category: Categoria
         price: Preço
         confection_time_in_hours: Tempo de confecção (em horas)
+        description: Descrição
+      raw_material:
+        name: Nome
+        category: Categoria
+        price: Preço
         description: Descrição
   helpers:
     submit:
