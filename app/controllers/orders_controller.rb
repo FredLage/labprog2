@@ -1,5 +1,7 @@
 class OrdersController < ApplicationController
-  
+
+  respond_to :html
+
   def index
     @orders = Order.all
     respond_with(@orders)
@@ -18,16 +20,16 @@ class OrdersController < ApplicationController
   end
 
   def create
-    
+
   end
 
   def update
-    
+
   end
 
   def destroy
-   
+
   end
 
-  
+
 end

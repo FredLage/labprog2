@@ -10,6 +10,9 @@ pt-BR:
       raw_material:
         one: Matéria-prima
         other: Matérias-primas
+      order:
+        one: Pedido
+        other: Pedidos
     attributes:
       product:
         name: Nome
@@ -22,6 +25,11 @@ pt-BR:
         category: Categoria
         price: Preço
         description: Descrição
+      order:
+        client_name: Nome do cliente
+        price: Preço
+        status: Status
+        type_of_payment: Tipo de pagamento
   helpers:
     submit:
       create: "Criar %{model}"

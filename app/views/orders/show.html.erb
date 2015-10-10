@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome do cliente:</b>
+  <%= @order.name %>
+</p>
+
+<p>
+  <b>Preço:</b>
+  <%= @order.price %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @order.status %>
+</p>
+
+<p>
+  <b>Tipo de pagamento:</b>
+  <%= @order.type_of_payment %>
+</p>
+
+
+<%= link_to 'Editar', edit_order_path(@order) %> |
+<%= link_to 'Voltar', orders_path %>
