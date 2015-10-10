@@ -10,6 +10,7 @@ gem 'devise'
 gem 'factory_girl_rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.4.0'
+gem 'chosen-rails'
 
 group :development, :test do
   gem 'rspec-rails'

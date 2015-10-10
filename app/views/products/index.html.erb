@@ -4,18 +4,19 @@
   <tr>
     <th>Nome</th>
     <th>Categoria</th>
+    <th>Matérias-primas</th>
     <th>Preço</th>
     <th>Tempo de confecção (em horas)</th>
-    <th>Descrição</th>
+    <th colspan="3">Ações</th>
   </tr>
 
 <% @products.each do |product| %>
   <tr>
     <td><%= product.name %></td>
     <td><%= product.category %></td>
+    <td><%= raw_materials_names(product.raw_materials) %></td>
     <td><%= product.price %></td>
     <td><%= product.confection_time_in_hours %></td>
-    <td><%= product.description %></td>
     <td><%= link_to 'Exibir', product %></td>
     <td><%= link_to 'Editar', edit_product_path(product) %></td>
     <td><%= link_to 'Excluir', product, method: :delete, data: { confirm: 'Tem certeza?' } %></td>

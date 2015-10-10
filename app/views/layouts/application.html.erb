@@ -126,12 +126,17 @@
               <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-nav side-nav">
-                      <li class="active">
+                      <li class="<%= active_for('products') %>">
                           <%= link_to products_path do %>
                           <i class="fa fa-cube"></i> Produtos
                           <% end %>
                       </li>
-                      <li>
+                      <li class="<%= active_for('orders') %>">
+                          <%= link_to orders_path do %>
+                          <i class="fa fa-cubes"></i> Pedidos
+                          <% end %>
+                      </li>
+                      <li class="<%= active_for('raw_materials') %>">
                           <%= link_to raw_materials_path do %>
                           <i class="fa fa-puzzle-piece"></i> Matérias-primas
                           <% end %>
