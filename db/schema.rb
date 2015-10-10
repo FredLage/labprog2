@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20151010162436) do
+ActiveRecord::Schema.define(:version => 20151010190951) do
+
+  create_table "line_items", :force => true do |t|
+    t.integer "product_id"
+    t.integer "order_id"
+    t.integer "quantity",   :default => 0
+  end
 
   create_table "orders", :force => true do |t|
     t.string   "client_name"
