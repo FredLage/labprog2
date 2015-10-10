@@ -17,6 +17,7 @@ pt-BR:
       product:
         name: Nome
         category: Categoria
+        raw_materials: Matérias-primas
         price: Preço
         confection_time_in_hours: Tempo de confecção (em horas)
         description: Descrição
