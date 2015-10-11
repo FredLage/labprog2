@@ -24,7 +24,10 @@ RSpec.describe ProductsController, :type => :controller do
   # Product. As you add validations to Product, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    FactoryGirl.build(:product).attributes.delete_if { |k, v| v.nil? }
+    raw_material = FactoryGirl.create(:raw_material)
+    FactoryGirl.build(:product)
+    .attributes.delete_if { |k, v| v.nil? }
+    .merge(raw_material_ids: [raw_material.id])
   }
 
   let(:invalid_attributes) {
