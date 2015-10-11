@@ -106,6 +106,7 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    pg (0.18.3)
     polyglot (0.3.5)
     rack (1.4.7)
     rack-cache (1.2)
@@ -122,6 +123,11 @@ GEM
       activesupport (= 3.2.18)
       bundler (~> 1.0)
       railties (= 3.2.18)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     railties (3.2.18)
       actionpack (= 3.2.18)
       activesupport (= 3.2.18)
@@ -192,7 +198,11 @@ DEPENDENCIES
   factory_girl_rails
   font-awesome-sass (~> 4.4.0)
   jquery-rails
+  pg
   rails (= 3.2.18)
+  rails_12factor
+  rails_serve_static_assets
+  rails_stdout_logging
   rspec-rails
   sass-rails (~> 3.2.3)
   sqlite3
