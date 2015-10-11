@@ -20,16 +20,23 @@ class OrdersController < ApplicationController
   end
 
   def create
-
+    @order = Order.new(params[:order])
+    @order.save
+    respond_with(@order)
   end
 
   def update
-
+    @order.update_attributes(params[:order])
+    respond_with(@order)
   end
 
   def destroy
-
+    @order.destroy
+    respond_with(@order)
   end
 
-
-end
+  private
+    def set_order
+      @order = Order.find(params[:id])
+    end
+  end
