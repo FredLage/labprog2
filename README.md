@@ -52,9 +52,10 @@ Cada cliente pode estar vinculado a vários pedidos. Clientes possuem os seguint
 * E-mail: endereço de e-mail do cliente.
 
 ###Itens
-Representam um item de um pedido, contendo um produto e a sua quantidade. Possui dois campos:
+Representam um item de um pedido, contendo um produto e a sua quantidade. Possui três campos:
 
 * Quantidade: quantidade de um determinado produto contida no pedido;
+* ID do pedido: identificação do pedido;
 * ID do produto: identificação do produto contido no pedido.
 
 ## Testes
@@ -65,7 +66,7 @@ Os testes foram feitos com ajuda da ferramenta RSpec. Para executá-los, utilize
 ## Produção
 O projeto está hospedado no Heroku, onde pode ser acessado através do seguinte link:
 
-XXXXXXXXXXXXXXXXX
+[https://labprog2.herokuapp.com/](https://labprog2.herokuapp.com/)
 
 ##Futuras funcionalidades
 Para as próximas entregas, planejamos implementar as seguintes funcionalidades: criação de uma tela de boas-vindas, cálculo do preço de venda estimado de um produto, criação de um sistema de login para múltiplos usuários, controle de caixa para cada funcionário e relatórios de pedidos, produtos e de matérias-primas. Possivelmente outras funcionalidades serão implementadas além destas.
