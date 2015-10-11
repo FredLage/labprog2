@@ -5,14 +5,21 @@ gem 'rails', '3.2.18'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'devise'
 gem 'factory_girl_rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.4.0'
 gem 'chosen-rails'
 
+group :production do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
+  gem "pg"
+end
+
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
 end
