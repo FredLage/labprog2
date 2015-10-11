@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_filter :set_order, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
 
