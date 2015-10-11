@@ -16,7 +16,7 @@ A instalação do ArtesanArte é simples, já que em seu desenvolvimento foram u
     $ rake db:create && rake db:migrate
 
 ## CRUDs
-O aplicativo consiste de cinco CRUDs:
+O aplicativo consiste de quatro CRUDs:
 
 ###Produtos
 São os artigos confeccionados por algum dos artesãos da loja. Cada produto está vinculado a uma ou mais matérias-primas e possui os seguintes campos:
@@ -50,6 +50,8 @@ Cada cliente pode estar vinculado a vários pedidos. Clientes possuem os seguint
 * Endereço: endereço do cliente;
 * Telefone: telefone de contato do cliente;
 * E-mail: endereço de e-mail do cliente.
+
+####Além deste CRUDs, foi criado um model extra:
 
 ###Itens
 Representam um item de um pedido, contendo um produto e a sua quantidade. Possui três campos:
