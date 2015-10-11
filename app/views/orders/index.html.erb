@@ -11,7 +11,7 @@
 
 <% @orders.each do |order| %>
   <tr>
-    <td><%= order.client_name %></td>
+    <td><%= order.client.name %></td>
     <td><%= order.price %></td>
     <td><%= order.type_of_payment %></td>
     <td><%= order.status %></td>
