@@ -78,5 +78,6 @@ Para as próximas entregas, planejamos implementar as seguintes funcionalidades:
 Os integrantes do grupo são:
 
 Frederico Lage Ferreira
+
 Ivan Krunoslav Suto
 
