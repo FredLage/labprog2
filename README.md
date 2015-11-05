@@ -8,9 +8,10 @@ Aplicativo criado com objetivo de gerenciar uma pequena loja de artesanato.
 Com o ArtesanArte é possível gerenciar seu estoque de produtos e matérias-primas, cadastrar os clientes de sua empresa e administrar os pedidos encomendados por eles.
 
 ## Como instalar
+Foi usado o Ruby 3.2.18.
 A instalação do ArtesanArte é simples, já que em seu desenvolvimento foram utilizadas as configurações padrão do Rails. Basta executar os seguintes comandos:
 
-    $ git clone git@github.com:barbaradcf/labprog2.git
+    $ git clone git@github.com:FredLage/labprog2.git
     $ cd labprog2
     $ bundle install
     $ rake db:create && rake db:migrate
@@ -76,4 +77,6 @@ Para as próximas entregas, planejamos implementar as seguintes funcionalidades:
 ## Autores
 Os integrantes do grupo são:
 
-* [Bárbara Fernandes](https://github.com/barbaradcf/)
+Frederico Lage Ferreira
+Ivan Krunoslav Suto
+
